@@ -23,7 +23,10 @@ public class destroyPuddle : MonoBehaviour
     }
 
     void Update()
-    {
+    {   
+
+        
+
         if(isOnPuddle){
             timer += Time.deltaTime;
             if(timer >= requiredDuration){
