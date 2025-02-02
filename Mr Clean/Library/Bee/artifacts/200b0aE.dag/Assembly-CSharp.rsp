@@ -424,6 +424,8 @@
 -analyzer:"/Applications/Unity/Hub/Editor/6000.0.35f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/6000.0.35f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/destroyPuddle.cs"
+"Assets/GrowPuddle.cs"
+"Assets/PlayerBounds.cs"
 "Assets/PlayerMovement.cs"
 -langversion:9.0
 /deterministic
