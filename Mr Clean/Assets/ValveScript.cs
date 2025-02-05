@@ -17,7 +17,7 @@ public class ValveScript : MonoBehaviour
     void Start()
     {
         System.Random rnd = new System.Random();
-        timeToOpen = rnd.Next(1,11);
+        timeToOpen = rnd.Next(1, 20);
     }
 
     // Update is called once per frame
