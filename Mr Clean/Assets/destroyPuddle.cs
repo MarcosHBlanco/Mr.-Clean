@@ -3,13 +3,14 @@ using UnityEngine;
 
 public class destroyPuddle : MonoBehaviour
 {   
-    public float requiredDuration = 3f;
+    public float requiredDuration = 2.5f;
     public float timer = 0f;
-    public float minScale = 3f;
+
     bool isOnPuddle = false;
     private Vector3 initialScale;
 
-    private void Start(){
+    private void Start()
+    {
         initialScale = transform.localScale;
     }
     private void OnTriggerEnter(Collider other)
@@ -34,8 +35,8 @@ public class destroyPuddle : MonoBehaviour
             timer += Time.deltaTime;
             if(timer >= requiredDuration){
                 float currentScaleX = transform.localScale.x;
-                if(currentScaleX > 3){
-                    ShrinkPuddle(3f);
+                if(currentScaleX > 2){
+                    ShrinkPuddle();
                 } else {
                     Destroy(gameObject);
                 }
@@ -43,10 +44,9 @@ public class destroyPuddle : MonoBehaviour
             }
         }
     }
-    public void ShrinkPuddle(float amount){
-        // float newScaleX = Mathf.Max(transform.localScale.x - amount, minScale);
-        // float newScaleZ = Mathf.Max(transform.localScale.z - amount, minScale);
-
-        transform.localScale = new Vector3(transform.localScale.x - amount, transform.localScale.y, transform.localScale.z - amount);
+    public void ShrinkPuddle()
+    {
+        transform.localScale = new Vector3(transform.localScale.x - 1.5f * Time.deltaTime, transform.localScale.y, transform.localScale.z - 1.5f * Time.deltaTime);
+        // transform.localScale = new Vector3(-(transform.localScale.x - amount), transform.localScale.y, -(transform.localScale.z - amount));
     }
 }

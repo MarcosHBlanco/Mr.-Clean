@@ -427,6 +427,7 @@
 "Assets/GrowPuddle.cs"
 "Assets/PlayerBounds.cs"
 "Assets/PlayerMovement.cs"
+"Assets/ValveScript.cs"
 -langversion:9.0
 /deterministic
 /optimize+
