@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Puddle
   - Wall
+  - Drain
   layers:
   - Default
   - TransparentFX
